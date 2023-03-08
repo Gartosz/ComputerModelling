@@ -5,6 +5,7 @@
 #include <glm/gtc/random.hpp>
 #include <fstream>
 #include <algorithm>
+#include <chrono>
 
 class ofApp : public ofBaseApp{
 
@@ -27,7 +28,7 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
-		
+
 		void keyPressed(int key);
 		void keyReleased(int key);
 		void mouseMoved(int x, int y );
@@ -47,6 +48,7 @@ class ofApp : public ofBaseApp{
 		void update_grid_size();
 		void reload_grid();
 		char* get_current_time();
+		void open_file();
 
 	private:
 		int size = 6;
